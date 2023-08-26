@@ -1,0 +1,106 @@
+@import "../../scss/globalColor.scss";
+
+.contact-card{
+  padding: 30px 30px 0 30px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 0.5rem solid $githubProfileCardBorder;
+    margin-left: auto;
+    width: 100%;
+    max-width: 350px;
+    height: 75%;
+    box-shadow: $lightBoxShadow 0 30px 30px -30px;
+    transition: all 0.3s ease-out;
+}
+  
+.profile-image:hover {
+    box-shadow: none;
+}
+  
+.prof-title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    padding-left: 2vw;
+}
+  
+.location-div {
+    text-shadow: $githubProfileCardLocationTS;
+}
+  
+.opp-div {
+    padding-bottom: 1rem;
+}
+  
+.row {
+    display: flex;
+    padding: 0 2vw 0 2vw;
+}
+  
+.main-content-profile {
+    flex: 80%;
+}
+  
+.image-content-profile {
+    text-align: right;
+    flex: 20%;
+    max-width: 100%;
+    height: auto;
+}
+  
+.bio-text {
+    line-height: 30px;
+    font-size: 22px;
+}
+  
+.desc-prof {
+    line-height: 45px;
+    font-size: 19px;
+}
+  
+.subTitle {
+    color: $subTitle;
+}
+
+
+@media only screen and (max-width: 961px){
+    .row{
+        padding: 2vw;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 30px 30px 0 30px;
+    }
+
+    .image-content-profile{
+        padding-top: 2vw;
+        text-align: center;
+    }
+
+    .main-content-profile{
+        text-align: center;
+    }
+
+    .prof-title{
+        font-size: 35px;
+        padding: 3vw;
+    }
+
+    .contact-card{
+        padding: 0;
+        padding-bottom: 1em;
+    }
+
+    .bio-text{
+        font-size: 15px;
+    }
+
+    .profile-image {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 12em;
+        max-height: 12em;
+    }
+}

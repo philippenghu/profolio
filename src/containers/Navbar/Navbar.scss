@@ -1,0 +1,134 @@
+@import "../../scss/globalColor.scss";
+
+.headroom {
+  background-color: $darkBackground;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-list {
+  width: 100%;
+  background-color: $darkBackground;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: block;
+  flex: none;
+  float: left;
+  font-size: 1.5em;
+  padding-top: 10px;
+  line-height: normal;
+  font-family: "Agustina Regular";
+  font-weight: bold;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  padding: 0 10px;
+  color: $textColor;
+  font-size: 40px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+.navbar-items {
+  display: block;
+  margin-bottom: 1rem;
+  float: left;
+}
+
+.navbar-items a {
+  display: block;
+  color: $textColor;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  outline: none;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $textColor;
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 961px) {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 961px){
+    .logo{
+      font-size: 35px;
+    }
+
+    .navbar-list{
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        top: 100%;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+
+        ul {
+          margin: 10px;
+        }
+
+        .navbar-items {
+          // display: block;
+
+          float: none;
+          width: 100%;
+          text-align: center;
+          margin: 0.5rem 0;
+        }
+        &.open {
+          max-height: 350px; 
+        }
+    }
+
+    .navbar-items{
+      margin-bottom: 0.5rem;
+    }
+
+    .navbar-items a{
+      padding: 10px;
+    }
+
+    .mobile-menu-toggle.toggled .bar2{
+      opacity: 0;
+    }
+
+    .mobile-menu-toggle.toggled .bar1{
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .mobile-menu-toggle.toggled .bar3{
+      transform: translateY(-4px) rotate(-45deg);
+    }
+}

@@ -1,0 +1,42 @@
+@import "../../scss/globalColor.scss";
+
+.prof-container{
+    display: flex;
+}
+
+.prof-text {
+    width: 50%;
+    //border: 2px solid red;
+    padding: 20px;
+}
+
+.prof-lottie{
+    width: 50%;
+    overflow: hidden;
+    margin: auto;
+   //border: 2px solid red;
+}
+
+.lottie-wrapper {
+    transform: scale(1.4);
+}
+
+.prof-heading{
+    font-size: calc(10px + 2vw);
+}
+
+@media only screen and (max-width: 961px){
+    .prof-container{
+        display: block;
+    }
+
+    .prof-text {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .prof-lottie{
+        width: 90%;
+    }
+}
