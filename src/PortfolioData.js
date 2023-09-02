@@ -1,5 +1,3 @@
-import emoji from "react-easy-emoji";
-
 
 
 const introduction = {
@@ -7,7 +5,7 @@ const introduction = {
     
     lastName : "Peng" ,
     
-    introductionText : "A passionate Web Developer and former Urban Designer. " ,
+    introductionText : "A passionate Web Developer/Former Urban Designer. " ,
 
 
     contactButtonText : "CONTACT ME"
@@ -40,29 +38,27 @@ const skillsToShow = {
     skillSubtitle : "FULL STACK DEVELOPER / FORMER DESIGNER",
 
     skillList : [
-        emoji("⚡ Develop highly interactive FrontEnd / User Interface for you."),
+        ("Develop highly interactive FrontEnd / User Interface."),
     ],
 
     softwareSkillsIcons : [
         {
             name : "Photoshop",
-            fontAwesomeIcon : "fas fa-a"
+            fontAwesomeIcon : "fas fa-photo"
         },
         {
             name : "Autocad",
-            fontAwesomeIcon : "fad fa-pencil"
+            fontAwesomeIcon : "fas fa-laptop"
       
         },
         {
             name : "CSS",
             fontAwesomeIcon : "fab fa-css3-alt"
         },
-
         {
-            name : "sass",
-            fontAwesomeIcon : "fab fa-sass"
+            name : "Figma",
+            fontAwesomeIcon : "fab fa-figma"
         },
-
         {
             name : "Java",
             fontAwesomeIcon : "fab fa-java"
@@ -93,10 +89,6 @@ const skillsToShow = {
     ]
 }
 
-
-
-
-
 const projectsGithubRepos = {
     heading : "What I have made",
     username : "philippenghu",
@@ -106,56 +98,81 @@ const projectsGithubRepos = {
 }
 
 
-/*
-    Customize your achievement and certificate area heading through this object.
+const urbanPlan = {
 
-    You can add your achievement or Certificate details in the "achievementsOrCertificateDetails" array.
-    Play with care with variables in this array else things might not look as you want
-*/
+    details: [
+        {
+            title:"Cisco smart city urban design",
+            imageSrc:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWY7OewbVPGSLlq2U78GXJzCV1g0o_YvB5PnNyLGeDKlnLN2VN8W9n6NT6pzKg3ZncolQ4Tng2lKGG49XyinGrmnrWKb2wSoRlej_vmHrMcU4aMPKLdI3-gRDil0whYeuTGr-2cLCwdAL5Mak5XOwWmnoP0V-iQJ0Hp-l1Redio8m_Y3YWon4DXpyLuXE/s320/Weixin%20Image_20230901230242.png"
+        },
+        {
+            title:"NANSHA TVB ORIENTAL HOLLYWOOD CONCEPTUAL PLAN",
+            imageSrc:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAmtFm1Pha_fFnBeDEJFI8MdcdcP96ju7j-lVxDZw0dgbSBSJ65Q45dj0V4B---DHmwAxT9Oy0ZnOndJDqaiwwqOKUmiiJ9j5pdE9moHDYhvCBs1HohodMZOJGqRDs3WGZFelpxv5cx1cbJHZdctS7dIztptkwrJsQkxDLMOn5Iteqc1fIIGjpwErHr0s/s320/Weixin%20Image_20230901230323.png"
+        },
+        {
+            title:"Guizhou Sajin Education City Zoning by-law and design",
+            imageSrc:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuzFsxZE-8GnPf3d7ghoqcP4ngdIf_uFyf3Z8GaoIUBkvVzL96n9_ZGZxeVpXSlfoUt4tc80YdcPKPH8fxkaR_LTO7QFff7G7ra2dKrU3LS4_Vl2G94Ua0bZGxU1Hkn3530wZJq5LxU66HS-o9xEas2sfRpo67FMcSq58aXCwAnoeViLtr1WqU2_zjw9I/s320/Weixin%20Photo%20Editor_20230901230057.jpg"
+        },
+        {
+            title:"ZhanJiang GOLEAD Residential Project Planning and Design",
+            imageSrc:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlPAYWcT-dpU4zrpBEMBrVRmk0bFhIfc7QNN5-SoRe9W6ne_veEmMgNyHw6B5yrMQSDWKNRALHVZIkGQ0nuI4xWsnEkWRKGoFH7mETxvO_7NNaMGr_jAZz1vJizp-FN4CRR_awsf5Anb9pNFBem_Ton2hu2HjX0aB8n5Oj6mTopX8AZRyKzTJuLch5LbA/s320/Weixin%20Photo%20Editor_20230901230145.jpg"
+        },
+        {
+            title:"Guangzhou Vocational Technical College site plan",
+            imageSrc:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyMK05kjE5XbMc9feVxTxfr-ae5Db-_X28_z_BsOVARk0E426txurPx8szh0VTG0iuqIe34JhfwfL7RlxHm-ty_s6NqUp421g5PJ3en33Arseakh_jKNp3KEmtbOgjWyy9MgIuvlcxa3mTLUn_JZpJsbziiwPa-2pBJzKcGWdqnIplMBo-uUndj7kPUJk/s320/Weixin%20Photo%20Editor_20230901230211.jpg"
+        },
+        {
+            title:"Changsha Jianshan Lake innovative center planning and design",
+            imageSrc:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPfLQnUTkFjG4CSGE0AGqGCvWoMkYoZR3XQVsoDCXvammPSIVUq1PQ9yTvNBQzn3rX85SBN4K3CmbMo8eR2suoXerEM4CZ3EGKboBIi2c9eZA8i3K0Ngn7x4IT9GKARpzKIPSHyFNHMCItUunxkf_7yDFbyn4TsZmIjZGxWfi5NLjLGBY5DCegREPY60Q/s320/Weixin%20Photo%20Editor_20230901230356.jpg"
+        }
+    ]
+
+}
+
 const achievementsAndCertifications = {
-    heading: emoji("Achievements and Certifications🏆"),
+    heading: "Achievements and Certifications",
     subHeading : "ACHIEVEMENTS AND CERTIFICATES",
     
     achievementsOrCertificateDetails : [
         {
-            title: "Certificated Urban Planner",
-            description: "Added 4 missing test cases to Leetcode",
+            title: "Certificated Urban Planner of China",
+            description: "Awarded by Ministry of Natural Resources of China in 2018",
             imageAlt: "Certificated Urban Planner",
-            imageSrc: "https://cdn.iconscout.com/icon/free/png-256/free-leetcode-3521542-2944960.png",
-            hasLink: true,
-            proofLink: "https://docs.google.com/document/d/1lbeHFpQlfQfhVB18PnrFbJ1cL-OJ6yTYZ1XlJ4kzP0E/edit",
-            achievementButtonText: "Leetcode TestCases"
-        },
-
-        {
-            title: "AWS EC2 SSH key-pair",
-            description: "Corrected AWS command allowing millions users of AWS to seamlessly create key-pairs and SSH into their EC2 instances through CLI.",
-            imageAlt: "AWS png",
-            imageSrc: "https://hackfest.ca/images/partenaires/aws.png",
-            hasLink: true,
-            proofLink: "https://github.com/awsdocs/amazon-ec2-user-guide/pull/144",
-            achievementButtonText: "AWS Github Merge"
-        },
-
-        {
-            title: "LeetCode Solutions",
-            description: "Contributed to Leetcode solutions which helped many users to understand concept and intuition in more accurate way.",
-            imageAlt: "Leetcode png",
-            imageSrc: "https://cdn.iconscout.com/icon/free/png-256/free-leetcode-3521542-2944960.png",
-            hasLink: true,
-            proofLink: "https://docs.google.com/document/d/10vYuOmOhiQVOh86IE_kXWbeIxw1_4-vEJoV8QcuOzWI/edit",
-            achievementButtonText: "Leetcode Solutions"
-        },
-
-        {
-            title: "Global ranking for DSA",
-            description: "282 global rank in July Challenge 2021 and 554 global rank in April challenge 2021 on CodeChef.",
-            imageAlt: "Leetcode png",
-            imageSrc: "https://avatars.githubusercontent.com/u/11960354?v=4",
+            imageSrc: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGkhW_GjPMWbfRA5VBUi39As8A1lQFcpD10icYw50fERQjqYHnn1kyxA6bKdcwbcWgvtlRvjq2-h7uYNZSzJXSgbLKbGblopgF8lpgKH91cdOEUhhqozke9vrS8UbnII8FkN8QTE-8Y_-byDnVIQQnHfB1h_YGAyJbeqSRnikY5l68uzinPR23-fj9Utc/s1440/%E6%B3%A8%E8%A7%84%E5%86%85%E9%A1%B5%E7%BF%BB%E8%AF%91.jpg",
             hasLink: false,
-            proofLink: "https://docs.google.com/document/d/1lbeHFpQlfQfhVB18PnrFbJ1cL-OJ6yTYZ1XlJ4kzP0E/edit",
-            achievementButtonText: "Leetcode Solutions"
+            proofLink: "",
+            achievementButtonText: ""
+        },
+
+        {
+            title: "Engineer of Urban planning",
+            description: "Awarded by Guangzhou Human Resources and Social Insurance Bureau of China in 2015",
+            imageAlt: "Engineer of Urban planning",
+            imageSrc: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBwBzCSTJux4RbgW0yTkc8HV6HwWaXNYqV1yLIcfscKijsZURNUmUPu-FiYdsw4MFah8fTRghN89MkQD8CmIdCspqnIsZ-mEAL1e5jY1d_ohdVTVyKvJRHDK1aJDaEzevT8M4y6wmIpnojMO6GHEopFtPEXEq47DWMCcCfRBDT_DaKwPMhFsWn6ah9_tY/s672/Weixin%20Photo%20Editor_20230901015047.jpg",
+            hasLink: false,
+            proofLink: "",
+            achievementButtonText: ""
+        },
+        {
+            title: "Excellent Planning and Design Award ",
+            description: "Was awarded third Prize of Excellent Urban and Rural Planning and Design Award of Hubei Province in 2015",
+            imageAlt: "",
+            imageSrc: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg99gtn5AGWyCglkYfjcR5GmVWsyr47x03GFe22NuA5tA6BAgGd6yve0G9l46sU274UcXMS57ekKeJQBv66r7V357JIVJ7WxntGstDaOfFjBMziT16HScOTJXZHmxrENjWcBsYqFHvb9Y5CLbEw9XTWmbGcnLIkPm7x9gGKtkCCVbfa4aZQ2NhKfXjjoD8/w510-h383/55849f3b67bfbc8febfa80d5ed65fdf.jpg",
+            hasLink: false,
+            proofLink: "",
+            achievementButtonText: "Planning and Design Award"
+        },
+        {
+            title: "Excellent performance at SAIT",
+            description: "Got an average GPA of 3.9, was awarded as an graduate with honours at SAIT",
+            imageAlt: "Diploma",
+            imageSrc: "https://media.licdn.com/dms/image/D562DAQHwvtUqTA6BYA/profile-treasury-image-shrink_800_800/0/1687161117443?e=1694235600&v=beta&t=OiJdRWshWAYqZmPqW5tvI9U6nWhP28riiKl1vQeIkXE",
+            hasLink: false,
+            proofLink: "",
+            achievementButtonText: ""
         }
+
+      
     ]
 }
 

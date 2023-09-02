@@ -23,7 +23,7 @@ const Achievements = () => {
                                 imageAlt = {detail.imageAlt}
                                 imageSrc = {detail.imageSrc}
                                 linkToCertificateOrAchievement = {detail.linkToCertificateOrAchievement}
-                                hasAchievementLink = {detail.hasLink}
+                            
                                 achievementTitle={detail.achievementButtonText}
                             />
                         )

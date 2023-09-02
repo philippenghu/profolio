@@ -11,7 +11,7 @@ const Introduction = () => {
             <div className="introduction-container">
                 <div className="about">
                     <h1 className="greeting-text">
-                        Hi, I am {introduction.firstName}
+                        Hi, I am {introduction.firstName} {introduction.lastName}
                     </h1>
                     <p className="greeting-text-p subTitle-intro"> 
                         {introduction.introductionText}
@@ -19,8 +19,7 @@ const Introduction = () => {
                     <ProfileIcons />
                     <div className="contact-button-div">
                         <Button text={introduction.contactButtonText} href="#contact" />
-                        <Button text={introduction.resumeButtonText} href={introduction.resumeLink} newTab={true} />
-                    </div>
+                         </div>
                 </div> 
             </div>
  

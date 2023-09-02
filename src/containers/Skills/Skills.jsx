@@ -1,8 +1,5 @@
 import React from "react";
 import { Fade } from "react-reveal";
-
-import ManProgramming from "../../assets/lottie/man-programming.json";
-
 import SoftwareSkills from "../../components/SoftwareSkills/SoftwareSkills";
 import { skillsToShow } from "../../PortfolioData";
 import "./Skills.scss";
@@ -12,7 +9,6 @@ const Skills = () =>{
     return (
         <div id="skills" className="skills-container">
           
-
             <Fade right duration={1000} > 
                 <div className="skills-text-container">
                     <h1 className="skills-heading">
